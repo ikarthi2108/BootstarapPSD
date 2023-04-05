@@ -1,54 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
-    <script src="assests/js/bootstrap.bundle.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+  <script src="assests/js/bootstrap.bundle.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 </head>
 <style>
-    .nav-link{
-        margin-top: -800px;
-        color: azure;
-        font-family: 'Quicksand';
-    }
+  #nav1{
+    color: azure;
+    font-family: "Quicksand";
+    font-size: 0.8rem;
+  }
+  #img {
+    background-image: url(assests/images/Rectangle\ 1.png);
+  }
+  #background {
+            background-image: url(assests/images/Rectangleoriginal.png);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+  #button {
+    background-color: #aab33c;
+    color: azure;
+  }    
+  .navbar-toggler {
+            border:none;
+            text-decoration: none;
+            color: #aab33c;
+            background-color:#aab33c ;
+  }  
+  @font-face {
+    font-family: 'Ribbon';
+    src: url(./assests/fonts/ribbon/Ribbon131BT-Regular.otf);
+  }
+  .best{
+    font-family: 'Ribbon';
+  }
+  
 </style>
-<body>
-    <div id="#page1">
-    <img src="assests/images/Rectangle 1.png">
-    <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">PLANS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">LEARN MORE</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">WIDGET</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" >CONTACT US</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" >FRANCAIS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" >LOG IN</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" ><button> THE DEAL</button></a>
-        </li>
-      </ul>
-      </div>
 
+<body>
+  
+  <div id="img">
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-transparent" id="nav">
+          <div class="col-3">
+            <a href="#"> <img src="assests/images/logo.png" class="img-fluid" width="150px" alt="logo"></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" id="nav1">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="nav1" >PLANS</a>
+              </li>
+              <li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="nav1">LEARN MORE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="nav1">WIDGET</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="nav1">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="nav1">FRANCAIS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="nav1">LOGIN</a>
+              </li>
+              <li class="nav-item">
+                <button id="button" type="submit">GET THE DEAL</button>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-image p-5  shadow-1-strong rounded text-white" id="background">
+    
+    </div>
+
+  </div>
+  
+  </nav>
 </body>
+
 </html>
