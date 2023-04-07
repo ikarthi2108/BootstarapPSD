@@ -9,63 +9,8 @@
   <link rel="stylesheet" href="assests/css/bootstrap.min.css">
   <script src="assests/js/bootstrap.bundle.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-  <style>
-    #menu {
-      color: #e0dddd;
-      font-size: small;
-    }
+  <link rel="stylesheet" href="assests/css/style.css">
 
-    #menu:hover {
-      color: #a9b33b;
-    }
-
-    #button {
-      color: #ffffff;
-      background-color: #a9b33b;
-      font-size: small;
-      border: none;
-    }
-
-    #button:hover {
-      background-color: #5f6517;
-    }
-
-    .navbar-toggler {
-      background-color: #a9b33b;
-      font-size: small;
-      border: none;
-    }
-
-    @font-face {
-      font-family: 'Ribbon';
-      src: url(./assets/fonts/ribbon/Ribbon131BT-Regular.otf);
-    }
-
-    #banner {
-      width: 100vw;
-    }
-
-    .best {
-      font-family: 'Ribbon';
-      font-size: 400%;
-      color: #a9b33b;
-    }
-
-    .font {
-      font-size: 150%;
-      line-height: 40px;
-      text-transform: uppercase;
-      color: #030303;
-      font-weight: 700;
-      font-family: "Quicksand";
-    }
-
-    #cards {
-      color: #030303;
-      background-color: #d9e271;
-      font-family: "Quicksand";
-    }
-  </style>
 </head>
 
 <body>
@@ -76,12 +21,13 @@
           <div class="col-3">
             <a href="#"> <img src="assests/images/logo.png" class="img-fluid" width="150px" alt="logo"></a>
           </div>
+          <!-- navbar Toggler  -->
 
-          <button class="navbar-toggler col-md-auto" type="button" data-bs-toggle="collapse"
+          <button class="navbar-toggler col-md-auto me-2" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
-          <!-- navbar clickables -->
+          <!-- navbar  -->
 
           <div class="col-9 ms-2">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -122,9 +68,9 @@
     </div>
   </header>
   <div class="cointainer">
-    <img src="assests/images/Rectangleoriginal.png" class="img-resposive img-fluid" alt="banner" id="banner">
+    <img src="assests/images/Rectangleoriginal.png" class="img-resposive img-fluid" width="100vw" alt="banner" id="bg1">
   </div>
-
+  <!--page2 with cards-->
   <div class="container-sm overflow-hidden">
     <div class="row justify-content-center">
       <div class="col-sm-12 col-md-9 col-lg-6 text-center">
@@ -137,48 +83,49 @@
   </div>
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <a href="" class=" col-md-3 card text-center border-0 ms-1 ms-lg-0 me-1 mt-3 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
-        id="card-color" style="max-width:min-content;">
+      <a href="#" class=" col-md-3 card text-center border-0 ms-1 ms-lg-0 me-1 mt-3 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
+        id="card" style="max-width:min-content;">
         <div class="card-body p-0">
           <div class="col-md-3  m-2">
-            <div class="badge text-wrap pt-4" id="cards" style="width: 10rem;height:10rem;">
-              <img src="assests/images/card1.png" class="img-fluid mt-1" width="60px" height="56.7px" alt="...">
+            <div class="badge text-wrap pt-4" id="card" style="width: 10rem;height:10rem;">
+              <img src="assests/images/card1.png" class="img-fluid mt-1 pb-2" width="60px" height="56.7px"
+                alt="User-friendly">
               <h6><b>User-friendly interface</b></h6>
             </div>
           </div>
         </div>
       </a>
-      <a href=""
+      <a href="#"
         class="col-md-3 text-decoration-none  card text-center border-0 ms-1 me-1 mt-3 me-sm-2 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
-        id="card-color" style="max-width:min-content;">
+        id="card" style="max-width:min-content;">
         <div class="card-body p-0">
           <div class="col-md-3 m-2">
-            <div class="text-wrap pt-4 " id="cards" style="width: 10rem;height:10rem ;">
-              <img src="assests/images/card2.png" class="img-fluid" width="60px" height="60px" alt="...">
+            <div class="text-wrap pt-4 " id="card" style="width: 10rem;height:10rem ;">
+              <img src="assests/images/card2.png" class="img-fluid pb-2" width="60px" height="60px" alt="analysis">
               <h6><b>Automatic analysis revision</b></h6>
             </div>
           </div>
         </div>
       </a>
-      <a href=""
+      <a href="#"
         class="col-md-3 text-decoration-none  card text-center border-0 ms-1 me-1 me-lg-3 mt-3 me-md- mt-sm-3 mt-md-3"
-        id="card-color" style="max-width:min-content;">
+        id="card" style="max-width:min-content;">
         <div class="card-body p-0">
           <div class="col-md-3 m-2">
-            <div class="text-wrap pt-4 ps-4 pe-4" id="cards" style="width: 10rem;height:10rem ;">
-              <img src="assests/images/card3.png" class="img-fluid" width="60px" height="60px" alt="...">
+            <div class="text-wrap pt-4 ps-4 pe-4" id="card" style="width: 10rem;height:10rem ;">
+              <img src="assests/images/card3.png" class="img-fluid pb-2" width="60px" height="60px" alt="Step-by-step">
               <h6><b>Step-by-step data gathering</b></h6>
             </div>
           </div>
         </div>
       </a>
-      <a href=""
-        class="col-md-3 card text-decoration-none  text-center border-0 ms-1 me-1 me-md-1 me-lg-3 me-sm-3 mt-3 mt-sm-3 mt-md-3"
-        id="card-color" style="max-width:min-content;">
+      <a href="#"
+        class="col-md-3  card text-decoration-none  text-center border-0 ms-1 me-1 me-md-1 me-lg-3 me-sm-3 mt-3 mt-sm-3 mt-md-3"
+        id="card" style="max-width:min-content;">
         <div class="card-body p-0">
           <div class="col-md-3  m-2">
-            <div class="text-wrap pt-4" id="cards" style="width: 10rem;height:10rem ;">
-              <img src="assests/images/card4.png" class="img-fluid" width="60px" height="60px" alt="...">
+            <div class="text-wrap pt-4" id="card" style="width: 10rem;height:10rem ;">
+              <img src="assests/images/card4.png" class="img-fluid pb-2" width="60px" height="60px" alt="evaluation">
               <h6><b>Sell price evaluation feature</b></h6>
             </div>
           </div>
@@ -186,24 +133,164 @@
       </a>
     </div>
   </div>
-  </div>
-
+  <!--page3-->
   <div class="container">
-    <div class="row">
-      <div class="col-7 p-3">
-        <h6>Analyze any kind of Real </h6>
-         <h6> Estate investment</h6>
-         <p>iAnalyzeREI can handle all sorts of income-producing Real Estate (Multifamily, commercial, plexes, etc.). Moreover, the reports produced by iAnalyzeREI are well-illustrated to accurately pinpoint the advantages of living in a plex rather than renting an apartment.
+    <div class="row  justify-content-center">
+      <div class="col-10 col-sm-10 col-md-6 col-lg-6 mt-5  ms-auto">
+        <h5 class="real">Analyze any kind of Real</h5>
+        <h5 class="real"> Estate investment</h5>
+        <p class="pt-3 ">iAnalyzeREI can handle all sorts of income-producing Real Estate (Multifamily, commercial,
+          plexes, etc.). Moreover, the reports produced by iAnalyzeREI are well-illustrated to accurately pinpoint the
+          advantages of living in a plex rather than renting an apartment.
+        </p>
+        <p class="pt-3">
+          Multi-family or commercial properties can also be analyzed, regardless of their size, thanks to special
+          features that adapt to the building's type. For a residential lease, you should enter the number of rooms, the
+          apartments surface, the rent, included services, etc. While gathering information to register a commercial
+          lease, you will be able to enter even more specifications according to the rent such as: common space,
+          occupied space, initial rent cost, operating expenses, etc.</p>
+        <div class="row" id="innerrow">
+          <div class=" col-5 col-sm-6 col-md-6 pb-5"><a href="" class="text-decoration-none"><img
+                src="assests/images/smallicon1.png" class="img-fluid p-2" id="smallicon">
+              <h6 id="smallicontxt"> Unlimited apartment</h6>
+              <h6 id="smallicontxt">quantities</h6>
+            </a>
+          </div>
+          <div class=" col-6 col-sm-6 col-md-6"> <a href="" class="text-decoration-none"><img
+                src="assests/images/smalicon2.png" class="img-fluid p-2" id="smallicon">
+              <h6 id="smallicontxt">Commercial leases</h6>
+              <h6 class="pb-5" id="smallicontxt">specially adapted</h6>
+            </a>
+          </div>
+        </div>
+      </div>
 
-          Multi-family or commercial properties can also be analyzed, regardless of their size, thanks to special features that adapt to the building's type. For a residential lease, you should enter the number of rooms, the apartment’s surface, the rent, included services, etc. While gathering information to register a commercial lease, you will be able to enter even more specifications according to the rent such as: common space, occupied space, initial rent cost, operating expenses, etc.
-          
-          </p>
+      <div class="col-7 col-sm-1 col-md-6 col-lg-4 ">
+        <img src="assests/images/phone.png" class="img-fluid p-4" width="70%" alt="...">
       </div>
-      <div class="col-5">
-        <img src="assests/images/phone.png" class="img-fluid p-4" width="60%"  alt="...">
-      </div>
-     
     </div>
   </div>
 
+  <!--page4-->
+  <div class="container-fluid" id="bgcontainer">
+    <div class="container">
+      <div class="row ">
+        <div class="col-2 col-sm-10 col-md-6 col-lg-6 mt-5   ms-auto">
+          <img src="assests/images/computer.png" class="img-fluid p-4">
+        </div>
+        <div class="col-10 col-sm-1 col-md-6 col-lg-4 ">
+          <h6 class="pt-5 "  id="txtpg4">Zoom-imm is an essential</h6>
+          <h6 id="zoom">tool for all Real Estate</h6>
+          <h6 id="zoom">professionals!</h6>
+          <p id="page4para">Not only is iAnalyzeREI professional and dynamic, filled with pertinent information,
+            it also produces quality reports. The information displayed makes the report easy to
+            read and understand, even for novices. Try it and see for yourself. Choose the complete
+            report or the abbreviated version, according to your needs. You can even tell the
+            software exactly what information to print so that the report has everything you
+            want and nothing you dont.</p>
+
+          <p id="page4para">If you want to add a personal touch, your picture and your logo can also be inserted in the
+            document.</p>
+          <h6 id="page4content">Complete report, colorful and legible</h6>
+          <h6 id="page4content">Available abbreviated version </h6>
+          <h6 id="page4content">Professional aspect </h6>
+          <h6 class="pb-3" id="page4content">Personalize document for your client, friend or financial institution</h6>
+          <div class="row">
+            <div class="col-4 col-sm-6 col-md-4"></div>
+            <div class="col-8 col-sm-6 col-md-8"> <button class="border-0 ms-5 ps-3 pe-3 pt-1 pb-1 text-white"
+                id="button" type="submit">VIEW SAMPLE REPORT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--page 5 with table-->
+  <div class="container mt-5 ms-auto me-auto overflow-hidden">
+    <table class="table bdr ms-auto me-auto">
+      <thead>
+        <tr>
+          <th class="text-white" id="plan">Plans</th>
+          <th></th>
+          <th class="text-white" id="full">
+            <h6>FULL</h6>
+            <p class="text-white" id="tablepara">Have complete control over all the analysis parameters</p>
+          </th>
+          <th class="text-white" id="light">
+            <h6>LIGHT</h6>
+            <p class="text-white" id="tablepara">The best way to analyze properties & print pro reports</p>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="tablecontent" >Général
+            Market your properties on the web !
+            Your properties will be accessible from anywhere to anyone! Add links to your website, newsletter, e-mails,
+            etc.
+            Click here to view a sample
+          </td>
+          <td></td>
+          <td><img class="ms-3 mt-2" src="assests/images/tick.png"></td>
+          <td><img class="ms-3 mt-2" src="assests/images/tick.png"></td>
+        </tr>
+        <tr>
+          <td id="tablecontent">Data
+            Flexible mortgage (frequency, amortization, interest rate)</td>
+            <td></td>
+            <td><img class="ms-3 mt-2" src="assests/images/tick.png"></td>
+            <td><img class="ms-3 mt-2" src="assests/images/tick.png"></td>
+        </tr>
+        <tr>
+          <td id="tablecontent">Unlimited number of mortgages to finance a property (balance of sale, 2nd mortgage, collateral)
+            all this, under different conditions (interest rate, payment frequency, etc.)</td>
+            <td></td>
+            <td><img class="ms-3 mt-2" src="assests/images/tick.png"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td id="tablecontent">Unlimited number of income sources</td>
+          <td></td>
+          <td><img class="ms-3 mt-2" src="assests/images/tick.png"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td id="tablecontent">Modify the inflation of income and expenses independently for each year in the financial forecast.
+            Detailed leases (multifamily and commercial). Unlimited number of leases. (Start date, length, tenants,
+            included services, etc.)
+            Possibility to increase the rent for every lease.
+          </td>
+          <td></td>
+          <td><img class="ms-3 mt-2" src="assests/images/tick.png"></td>
+          <td><img class="ms-3 mt-2" src="assests/images/tick.png"></td>
+        </tr>
+        <tr>
+          <td id="tablecontent">Support and subscription
+            FREE technical support by E-mail and toll-free number.
+            No contract! No activation fees! No penalties! You can stop using iAnalyzeREI whenever you decide!
+            </td>
+            <td></td>
+            <td><img class="ms-3 mt-2" src="assests/images/tick.png"></td>
+          <td><img class="ms-3 mt-2"  src="assests/images/tick.png"></td>
+        </tr>
+        <tr>
+          <td rowspan="2">plan
+              prices
+
+          </td>
+          <td>monthly
+            Annual contract
+          </td>
+          <td>$42.80/month
+            $37.32/month
+          </td>
+          <td> $16.05/month</td>
+      </tr>
+      </tbody>
+
+    </table>
+  </div>
+
+ 
 </body>
