@@ -225,3 +225,112 @@ td:nth-child(1) {
 #click:hover {
   color: #5f6517;
 }
+
+/*css for card in page 6*/
+.--card:hover{
+  transform: scale(1.1);
+  transition:ease-out ;
+}
+#innercard {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  background-color: #fdffe9;
+  margin-left: 50px;
+  margin-top:-40px;
+  position: relative;
+  z-index: 1;
+}
+#botcard123{
+  height: 238px;
+}
+#innercardtext {
+  flex: 1;
+}
+
+#innerpara {
+  margin-top: auto;
+  font-size: 13px;
+  color: #313132;
+  font-weight: 600;
+  font-family: "Quicksand";
+}
+
+
+/*css for footer in page 7*/
+
+
+.font-2 {
+  width: 260px;
+  height: 130px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #404142;
+  font-weight: 400;
+  font-family: "Quicksand";
+}
+
+.font-3 {
+  font-size: 70%;
+  color: #404142;
+  font-family: "Quicksand";
+}
+
+.font-4,
+.font-5 {
+  font-size: 70%;
+  color: #404142;
+  font-weight: 500;
+  font-family: "Quicksand";
+}
+
+.font-bg-4,
+.font-bg-5 {
+  color: black;
+  text-decoration: none;
+}
+
+.font-bg-4:hover,
+.font-bg-5:hover {
+  color: #848d00;
+}
+
+.but-footer {
+  color: #ffffff;
+  background-color: #acb643;
+  font-size: small;
+  border: none;
+}
+
+.but-footer:hover {
+  background-color: #8b9429;
+}
+
+#fav {
+  color: #a8b336;
+}
+
+#fav-2 {
+  color: white;
+}
+
+.form-control {
+  border: none;
+  outline: 0px;
+}
+
+#addon-wrapping {
+  background-color: #acb643;
+}
+
+#basefoot{
+  background-color: #aab33c;
+}
+#basefoottext{
+font-size: 13px;
+letter-spacing: 2px;
+font-weight: 500;
+font-family: "Quicksand";
+}
