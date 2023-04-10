@@ -17,8 +17,8 @@ $(document).ready(function(){
         },
         messages:{
             pass:{
-                required:"Enter your password",
-                pattern:"Enter the valid password",
+                required:"Enter your Name",
+                pattern:"Enter the valid Name",
             },
             mbl:{
                 required:"Enter your Phone number",

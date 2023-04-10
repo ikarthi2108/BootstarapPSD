@@ -26,31 +26,74 @@
     font-size: small;
     border: none;
   }
-
-  @font-face {
-    font-family: 'Ribbon';
-    src: url(./assets/fonts/ribbon/Ribbon131BT-Regular.otf);
-  }
-
   #bg1 {
     width: 100vw;
   }
 
-  .best {
+/*These is page 1 text syling */
+  @font-face {
     font-family: 'Ribbon';
-    font-size: 400%;
-    color: #a9b33b;
+    src: url(/assests/fonts/ribbon/Ribbon131BT-Regular.otf);
   }
 
-  .font {
+  
+  .styletxt {
+    font-family: 'Ribbon';
+    font-size: 4rem;
+    color: #aab33c;
+    margin-top: -75%;
+    margin-left: 30%;
+}
+
+.styletxt1 {
+    font-family: 'Ribbon';
+    font-size: 2rem;
+    color: #aab33c;
+    margin-top: -60%;
+    margin-left: 37%;
+}
+
+.styletxt2 {
+    font-family: 'Ribbon';
+    font-size: 2rem;
+    color: #aab33c;
+    margin-top: -70%;
+    margin-left: 37%;
+}
+
+.style {
     font-size: 150%;
-    line-height: 40px;
     text-transform: uppercase;
-    color: #030303;
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Quicksand";
+    margin-left: 30%;
+}
+
+.but {
+    text-transform: uppercase;
+    color: #ffffff;
     font-weight: 700;
     font-family: "Quicksand";
-  }
+    margin-left: 30%;
+}
 
+.but1 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Quicksand";
+    margin-left: 34%;
+}
+
+.but2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Quicksand";
+    margin-left: 37%;
+}
+
+/*-------------------------------------*/
+/*cards and extra txt in page3*/
   #card {
     color: #030303;
     background-color: #d9e271;
@@ -111,6 +154,7 @@
   font-weight: 700;
   font-family: "Quicksand";
 }
+/* table styling starts here*/
 
 .table {
   width: 75%;
@@ -224,7 +268,7 @@ td:nth-child(1) {
   font-family: "Quicksand";
   border-bottom-right-radius: 14px;
 }
-
+/*-----------------------------------------------------*/
 /*css for page 6*/
 #bgimg {
   width: 100vw;
@@ -253,7 +297,7 @@ td:nth-child(1) {
   color: #5f6517;
 }
 
-/* page 6*/
+/* page  6 card*/
 .--card:hover{
   transform: scale(1.1);
   transition:ease-out ;
@@ -272,9 +316,12 @@ td:nth-child(1) {
 }
 #outercard123{
   height: 238px;
+  font-size: small;
 }
 #innercardtext {
   flex: 1;
+  font-size: small;
+  
 }
 
 #innerpara {
@@ -365,5 +412,27 @@ font-family: "Quicksand";
 }
 
 form .error{
-  color: #4c5504;
+  color: #f30707;
+}
+
+/* media queries */
+
+@media (max-width: 465px){
+  #menu {
+    font-size: 8px;
+    line-height: 0px;
+}
+  
+}
+
+@media (max-width: 375px){
+  #menu {
+    font-size: 6px;
+    line-height: 0px;
+}
+}
+@media (max-width: 768px){
+  #phone{
+    display: none;
+  }
 }
