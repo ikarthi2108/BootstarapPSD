@@ -60,18 +60,20 @@
   #smallicontxt {
     font-family: "Quicksand";
     color: #404142;
-    font-weight: 900;
+    font-weight: 500;
     font-size: large;
     text-transform: uppercase;
+    align-content: space-around;
+    font-size: smaller;
   }
   #smallicon{
     background-color: #d9e271;
   }
 
 #row2{
-  width: 651px;
-  height: 103px;
-  font-size: 30px;
+  width: 551px;
+  height: 63px;
+  font-size: 18px;
   line-height: 37px;
   text-transform: uppercase;
   color: #404142;
