@@ -10,6 +10,11 @@
   <script src="assests/js/bootstrap.bundle.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   <link rel="stylesheet" href="assests/css/style.css">
+  <script src="https://kit.fontawesome.com/d509f79d02.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+  <script src="./assests/js/validation.js"></script>
 
 </head>
 
@@ -68,7 +73,9 @@
     </div>
   </header>
   <div class="cointainer">
+    
     <img src="assests/images/Rectangleoriginal.png" class="img-resposive img-fluid" width="100vw" alt="banner" id="bg1">
+    
   </div>
   <!--page2 with cards-->
   <div class="container-sm overflow-hidden">
@@ -83,7 +90,7 @@
   </div>
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <a href="#" class=" col-md-3 card text-center border-0 ms-1 ms-lg-0 me-1 mt-3 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
+      <a href="#" class=" col-md-3 card text-center border-0 ms-1 ms-lg-0 me-1 mt-3 me-lg-3 me-md-1 mt-sm-1 mt-md-3 "
         id="card" style="max-width:min-content;">
         <div class="card-body p-0">
           <div class="col-md-3  m-2">
@@ -96,7 +103,7 @@
         </div>
       </a>
       <a href="#"
-        class="col-md-3 text-decoration-none  card text-center border-0 ms-1 me-1 mt-3 me-sm-2 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
+        class="col-md-3 text-decoration-none  card text-center border-0 ms-1 me-1 mt-3 me-sm-1 me-lg-3 me-md-1 mt-sm-1 mt-md-3 "
         id="card" style="max-width:min-content;">
         <div class="card-body p-0">
           <div class="col-md-3 m-2">
@@ -108,7 +115,7 @@
         </div>
       </a>
       <a href="#"
-        class="col-md-3 text-decoration-none  card text-center border-0 ms-1 me-1 me-lg-3 mt-3 me-md- mt-sm-3 mt-md-3"
+        class="col-md-3 text-decoration-none  card text-center border-0 ms-1 me-1 me-lg-3 mt-3 me-md- mt-sm-1 mt-md-3"
         id="card" style="max-width:min-content;">
         <div class="card-body p-0">
           <div class="col-md-3 m-2">
@@ -120,7 +127,7 @@
         </div>
       </a>
       <a href="#"
-        class="col-md-3  card text-decoration-none  text-center border-0 ms-1 me-1 me-md-1 me-lg-3 me-sm-3 mt-3 mt-sm-3 mt-md-3"
+        class="col-md-3  card text-decoration-none  text-center border-0 ms-1 me-1 me-md-1 me-lg-3 me-sm-1 mt-3 mt-sm-1 mt-md-3"
         id="card" style="max-width:min-content;">
         <div class="card-body p-0">
           <div class="col-md-3  m-2">
@@ -150,22 +157,36 @@
           lease, you will be able to enter even more specifications according to the rent such as: common space,
           occupied space, initial rent cost, operating expenses, etc.</p>
         <div class="row" id="innerrow">
-          <div class=" col-5 col-sm-6 col-md-6 pb-5"><a href="" class="text-decoration-none"><img
+          <div class=" col-5 col-sm-6 col-md-6 pb-5 d-lg-block d-none d-sm-block"><a href="" class="text-decoration-none"><img
                 src="assests/images/smallicon1.png" class="img-fluid p-2" id="smallicon">
               <h6 id="smallicontxt"> Unlimited apartment</h6>
               <h6 id="smallicontxt">quantities</h6>
             </a>
           </div>
-          <div class=" col-6 col-sm-6 col-md-6"> <a href="" class="text-decoration-none"><img
+          <div class=" col-5 col-sm-6 col-md-6 d-lg-block d-none d-sm-block"> <a href="" class="text-decoration-none"><img
                 src="assests/images/smalicon2.png" class="img-fluid p-2" id="smallicon">
               <h6 id="smallicontxt">Commercial leases</h6>
               <h6 class="pb-5" id="smallicontxt">specially adapted</h6>
             </a>
           </div>
         </div>
+        <!--for small device-->
+        <a href="#" class="text-decoration-none  text-black">
+          <div class="col-12 rounded-3 rounded mx-auto pt-2  mb-3 pb-1 border-5 d-block d-sm-none" id="card">
+              <img src="assests/images/smallicon1.png" id="smallicon" class="img-fluid rounded mx-auto d-block d-sm-none pt-2 pb-2 ps-2 pe-2 card border-0 mb-2" width="15%" alt="appartment-icon">
+              <p class="text-md-start justify-content-center" id="smallicontxt"><b>UNLIMITED APARTMENT
+                              QUANTITIES</b></p>
+          </div>
+      </a>
+      <a href="#" class="text-decoration-none text-black ">
+          <div class="col-12 rounded mx-auto rounded-3 pt-2 mb-3 pb-1 border-5 d-block d-sm-none" id="card">
+              <img src="assests/images/smalicon2.png" id="smallicon" class="img-fluid rounded mx-auto d-block d-sm-none mt-1 p-lg-3 pb-1 card border-0 mb-lg-2 mb-2" width="16%" alt="house-icon">
+              <p class="d-block d-sm-none" id="smallicontxt"><b>COMMERCIAL LEASES SPECIALLY ADAPTED</b></p>
+          </div>
+      </a>
       </div>
 
-      <div class="col-7 col-sm-3 col-md-6 col-lg-4 ">
+      <div  class="col-7 col-sm-3 col-md-6 col-lg-4 d-lg-block d-none d-sm-block ">
         <img src="assests/images/phone.png" class="img-fluid p-4" width="70%" alt="...">
       </div>
     </div>
@@ -205,7 +226,7 @@
       </div>
     </div>
   </div>
-
+<!--table-->
   <div class="container col-12 mt-5 ms-auto me-auto">
     <table class="table bdr ms-auto me-auto">
       <thead>
@@ -293,22 +314,22 @@
   <!--page six-->
   <div class="container-fluid mt-5">
     <div class="row">
-        <img src="assests/images/clickbg.png" class=" img-fluid" alt="banner" id="bg2">
-        <div class="col-12 col-sm-12">
-            <div class="centered font-weight-bold">Want to learn more about the software ?
+        <img src="assests/images/clickbg.png" class=" img-fluid" alt="banner" id="bgimg">
+        <div class="col-12 col-sm-2 col-lg-10">
+            <div class="centered font-weight-bold" >Want to learn more about the software ?
                 <a href="#" id="click"><b> Click here !</b></a></div>
         </div>
     </div>
 </div>
 
-<!--cards in page 6-->
+<!--cards-->
 <div class="container mt-5">
   <div class="row">
     <!--card1-->
     <div class="col-md-4">
       <div class="--card">
         <div class="--card-body">
-          <img class="img-resposive img-fluid" src="assests/images/pg6card1.png"id="botcard123">
+          <img class="img-resposive img-fluid" src="assests/images/pg6card1.png"id="outercard123">
         </div>
         <div class="col-md-9">
           <div class="--card" id="innercard">
@@ -324,12 +345,12 @@
         <div class="col-md-4">
           <div class="--card">
             <div class="--card-body">
-              <img class="img-resposive img-fluid" src="assests/images/pg6card2.png" id="botcard123">
+              <img class="img-resposive img-fluid" src="assests/images/pg6card2.png" id="outercard123">
             </div>
             <div class="col-md-9">
               <div class="--card" id="innercard">
                   <img src="assests/images/pg6innercard2.png">
-                  <div class="--card-text ms-1" id="innercardtext">
+                  <div class="--card-text ms-1 pe-sm-5" id="innercardtext">
                     <p  id="innerpara">FREE, fast and courteous customer support !</p>
                 </div>
               </div>
@@ -340,12 +361,12 @@
     <div class="col-md-4">
       <div class="--card">
         <div class="--card-body">
-          <img class="img-resposive img-fluid" src="assests/images/pg6card3.png" id="botcard123">
+          <img class="img-resposive img-fluid" src="assests/images/pg6card3.png" id="outercard123">
         </div>
         <div class="col-md-9">
           <div class="--card" id="innercard">
               <img class="img-resposive img-fluid" src="assests/images/pg6innercard3.png">
-              <div class="--card-text ms-1" id="innercardtext">
+              <div class="--card-text ms-1 pe-sm-5" id="innercardtext">
                 <p  id="innerpara">Zoom-imm is easy to use and produces professional reports</p>
             </div>
           </div>
@@ -354,9 +375,21 @@
     </div>
   </div>
 </div>
+   
+<div class="container-sm overflow-hidden mt-4 mb-4">
+  <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-9 col-lg-6 text-center">
+          <h4><b id="row2" class="p-3 border-0">
+                  Get the real deal</b></h4>
+          <button class="border-0 me-lg-2 me-md-2 p-lg-1 ps-lg-5 pe-lg-5" id="button" type="button">START
+              NOW</button>
+
+      </div>
+  </div>
+</div>
 
 
-<!--page 7 with footer-->
+<!--footer-->
 <footer class="footer-bg mt-5">
   <div class="container-fluid">
       <div class="row justify-content-lg-center">
@@ -403,17 +436,18 @@
               </div>
           </div>
           <div class="col-6 col-sm-3 col-md-2  mt-4">
+            <form id="myform">
               <div class="input-group flex-nowrap mb-2">
                   <span class="input-group-text icon" id="addon-wrapping"><i class="fa-solid fa-user" id="fav-2"></i></span>
-                  <input type="text" class="form-control" placeholder="Username">
+                  <input type="text"  class="form-control" placeholder="Username" name="pass">
               </div>
               <div class="input-group flex-nowrap mb-2">
                   <span class="input-group-text icon" id="addon-wrapping"><i class="fa-regular fa-envelope" id="fav-2" ></i></span>
-                  <input type="email" class="form-control" placeholder="Email">
+                  <input type="email" class="form-control" placeholder="Email" name="mail">
               </div>
               <div class="input-group flex-nowrap mb-2">
                   <span class="input-group-text icon" id="addon-wrapping"><i class="fa-sharp fa-solid fa-square-phone" id="fav-2"></i></span>
-                  <input type="text" class="form-control" placeholder="Phone">
+                  <input type="text" class="form-control" placeholder="Phone" name="mbl">
               </div>
               <div class="input-group flex-nowrap mb-2">
                   <span class="input-group-text icon" id="addon-wrapping"><i class="fa-solid fa-comment" id="fav-2"></i></span>
@@ -421,22 +455,24 @@
               </div>
               <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                   <button class="rounded-1 but-footer ps-3 pe-3" type="button">SUBMIT</button>
-              </div>
+              </div></form>
           </div>
       </div>
   </div>
-  <div class="text-center text-white p-3 mt-3" id="basefoot">
+  <div class="text-center text-white p-3 mt-3" id="footerid">
     <div class="row">
-    <div class="col-8" id="basefoottext">
+    <div class="col-8" id="footertxt">
     © COPYRIGHT 2021 - MAGEX TECHNOLOGIES INC. All RIGHTS RESERVED.
   </div>
-  <div class="col-4" id="basefoottext">T & CS</div>
+  <div class="col-4" id="footertxt">T & CS</div>
   </div>
 </div>
 </footer>
 
+
+
 </body>
 
 </html>
+
  
-</body>

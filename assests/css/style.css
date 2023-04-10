@@ -1,3 +1,6 @@
+
+
+/*styling for pg1,2,3*/
 #menu {
     color: #e0dddd;
     font-size: small;
@@ -65,9 +68,31 @@
     background-color: #d9e271;
   }
 
-
+#row2{
+  width: 651px;
+  height: 103px;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #404142;
+  font-weight: 700;
+  font-family: "Quicksand";
+  text-align: center;
+}
+.real{
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #404142;
+  font-weight: 700;
+  font-family: "Quicksand";
+}
+.card:hover{
+  transform: scale(1.1);
+  transition:ease-out ;
+}
  
- /*css for contents in page 4*/
+ /*page 4 with table*/
  #bgcontainer {
   background-color: #f3f4e8;
 }
@@ -199,7 +224,7 @@ td:nth-child(1) {
 }
 
 /*css for page 6*/
-#bg2 {
+#bgimg {
   width: 100vw;
 }
 
@@ -226,7 +251,7 @@ td:nth-child(1) {
   color: #5f6517;
 }
 
-/*css for card in page 6*/
+/* page 6*/
 .--card:hover{
   transform: scale(1.1);
   transition:ease-out ;
@@ -243,7 +268,7 @@ td:nth-child(1) {
   position: relative;
   z-index: 1;
 }
-#botcard123{
+#outercard123{
   height: 238px;
 }
 #innercardtext {
@@ -259,8 +284,10 @@ td:nth-child(1) {
 }
 
 
-/*css for footer in page 7*/
-
+/*footer style*/
+.footer-bg {
+  background-image: url(../images/footerbg.png);
+}
 
 .font-2 {
   width: 260px;
@@ -325,12 +352,16 @@ td:nth-child(1) {
   background-color: #acb643;
 }
 
-#basefoot{
+#footerid{
   background-color: #aab33c;
 }
-#basefoottext{
+#footertxt{
 font-size: 13px;
 letter-spacing: 2px;
 font-weight: 500;
 font-family: "Quicksand";
+}
+
+form .error{
+  color: #4c5504;
 }
