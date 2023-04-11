@@ -3,16 +3,16 @@ $(document).ready(function(){
         rules:{
             pass:{
                 required:true,
-                pattern:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$#])[A-Za-z\d@$#]{7,15}$/,
+                pattern: /^[A-Za-z' ']+$/,
             },
             mbl:{
                 required:true,
-                pattern:/^[0-9]{3}-[0-9]{4}-[0-9]{4}$/,
+                pattern:/^[0-9]{10}$/,
             },
             mail:{
                 required:true,
                 email:true,
-                pattern:/^([a-zA-Z0-9_])+@cgvak.com$/,
+                pattern: /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/,  
             },
         },
         messages:{

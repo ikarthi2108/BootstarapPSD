@@ -296,7 +296,10 @@ td:nth-child(1) {
 #click:hover {
   color: #5f6517;
 }
-
+#outercard123:hover{
+  transform: scale(1.1);
+  transition:ease-out ;
+}
 /* page  6 card*/
 .--card:hover{
   transform: scale(1.1);
@@ -326,7 +329,7 @@ td:nth-child(1) {
 
 #innerpara {
   margin-top: auto;
-  font-size: 13px;
+  font-size: small;
   color: #313132;
   font-weight: 600;
   font-family: "Quicksand";
@@ -434,5 +437,28 @@ form .error{
 @media (max-width: 768px){
   #phone{
     display: none;
+  }
+ #innercard{
+  display: none;
+ }
+}
+@media (max-width: 1024px){
+ #phone{
+  width: auto;
+  margin-top: 100px;
+ }
+}
+@media (max-width: 320px){
+ #bg1{
+  width: 100vw;
+ }
+ .navbar-toggler{
+  margin-right: 100px;
+ }
+}
+@media (max-width:426px){
+  #outercard123{
+padding-bottom: 30px;
+align-items: center;
   }
 }
